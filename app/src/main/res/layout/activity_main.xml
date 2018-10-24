@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/selector_indicator" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/selector_indicator" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/selector_indicator" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_skip_bg"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="跳过"
+        android:textColor="#fff" />
+</FrameLayout>
